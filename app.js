@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var path = require('path');
 /* var Botkit = require('botkit');
 var controller = Botkit.slackbot();
 var bot = controller.spawn({
@@ -20,7 +21,7 @@ controller.hears(["keyword","^pattern$"],["direct_message","direct_mention","men
 */
 
 app.get('/', function(req,res) {
-  res.sendFile('/index.html');
+  res.sendFile(path.join(__dirname + '/index.html'));
 });
 
 app.listen(8080);
