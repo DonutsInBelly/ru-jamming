@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 var path = require('path');
+var port = process.env.port || 8080;
 /* var Botkit = require('botkit');
 var controller = Botkit.slackbot();
 var bot = controller.spawn({
@@ -24,4 +25,4 @@ app.get('/', function(req,res) {
   res.sendFile(path.join(__dirname + '/index.html'));
 });
 
-app.listen(8080);
+app.listen(port);
