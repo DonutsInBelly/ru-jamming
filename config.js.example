@@ -1,0 +1,6 @@
+var config = {};
+
+config.spotify_id = 'INSERT_SPOTIFY_CLIENT_ID';
+config.spotify_secret = 'INSERT_SPOTIFY_CLIENT_SECRET';
+
+module.exports = config;
